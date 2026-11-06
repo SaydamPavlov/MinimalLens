@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Minimal Lens Alternative",
+  "version": "1.0",
+  "description": "тест",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Настройки Minimal Lens"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "commands": {
+    "capture-area": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "Выделить область экрана"
+    }
+  }
+}
